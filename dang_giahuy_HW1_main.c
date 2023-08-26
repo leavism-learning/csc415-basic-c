@@ -3,11 +3,12 @@
  * Name: Giahuy Dang
  * Student ID: 922722304
  * GitHub Name: leavism
- * Project: Assignment 1 - Command line arguments
+ * Project: Assignment 1 – Command Line Arguments
  *
  * File: dang_giahuy_HW1_main.c
  *
- * Description:
+ * Description: The main function for this simple program. Takes passed in arguments and
+ * prints the corresponding argument count and value.
  *
  **************************************************************/
 #include <stdio.h>
