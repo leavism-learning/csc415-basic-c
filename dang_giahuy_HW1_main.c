@@ -8,22 +8,28 @@
  * File: dang_giahuy_HW1_main.c
  *
  * Description: The main function for this simple program. Takes passed in arguments and
- * prints the corresponding argument count and value.
+ * prints the corresponding argument index and value.
  *
  **************************************************************/
 #include <stdio.h>
 
-int main(int argCount, char *argValues[])
+int main(int argc, char *argv[])
 {
-	printf("There were %d arguments on the command line.\n", argCount);
-
-	// This traverses the argValues string array to count the
-	// number of arguments passed and displays them in
-	// the format "Argument <count>:    <argument>"
-	for (int i = 0; i < argCount; i++)
+	// Checks for singular argument to print with propper grammar
+	if (argc == 1)
 	{
-		printf("Argument %02d: \t%s\n", i, argValues[i]);
+		printf("There was %d argument on the command line.\n", argc);
+	}
+	else
+	{
+		printf("There were %d arguments on the command line.\n", argc);
 	}
 
+	// Count the number of arguments passed and displays them in
+	// the format "Argument <argument index>:    <argument>"
+	for (int index = 0; index < argc; index++)
+	{
+		printf("Argument %02d: \t%s\n", index, argv[index]);
+	}
 	return 0;
 }
