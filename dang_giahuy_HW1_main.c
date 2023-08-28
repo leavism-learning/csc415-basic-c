@@ -7,8 +7,9 @@
  *
  * File: dang_giahuy_HW1_main.c
  *
- * Description: The main function for this simple program. Takes passed in arguments and
- * prints the corresponding argument index and value.
+ * Description: The main function for this simple program. 
+ * Takes passed in arguments and prints the corresponding
+ * argument index and value.
  *
  **************************************************************/
 #include <stdio.h>
@@ -25,8 +26,8 @@ int main(int argc, char *argv[])
 		printf("There were %d arguments on the command line.\n", argc);
 	}
 
-	// Count the number of arguments passed and displays them in
-	// the format "Argument <argument index>:    <argument>"
+	// Counts the number of arguments passed into argv and prints
+	// them in the format "Argument <argument index>:    <argument>"
 	for (int index = 0; index < argc; index++)
 	{
 		printf("Argument %02d: \t%s\n", index, argv[index]);
