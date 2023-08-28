@@ -16,7 +16,7 @@
 
 int main(int argc, char *argv[])
 {
-	// Checks for singular argument to print with propper grammar
+	// Checks for singular argument to print with proper grammar
 	if (argc == 1)
 	{
 		printf("There was %d argument on the command line.\n", argc);
